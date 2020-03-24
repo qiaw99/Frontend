@@ -36,4 +36,53 @@
 - name：为文本框命名，以备后台程序ASP 、PHP使用。
 - value：为文本输入框设置默认值。(一般起到提示作用)
 
+# 文本域，支持多行文本输入:
+当用户需要在表单中输入大段文字时，需要用到文本输入域。
 
+### Syntax:
+```html
+<textarea  rows="行数" cols="列数">文本</textarea>
+```
+1. \<textarea>标签是成对出现的，以\<textarea>开始，以\</textarea>结束。2
+2. cols ：多行输入域的列数。
+3. rows ：多行输入域的行数。
+4. 在\<textarea>\</textarea>标签之间可以输入默认值。
+
+### ex:
+```html
+<form  method="post" action="save.php">
+        <label>联系我们</label>
+        <textarea cols="50" rows="10" >在这里输入内容...</textarea>
+</form>
+```
+![](http://img.mukewang.com/52e5b4040001f4af05760367.jpg)
+
+# 单选框、复选框:
+在使用表单设计调查表时，为了减少用户的操作，使用选择框是一个好主意，html中有两种选择框，即单选框和复选框，两者的区别是单选框中的选项用户只能选择一项，而复选框中用户可以任意选择多项，甚至全选。
+
+### Syntax:
+```html
+<input   type="radio/checkbox"   value="值"    name="名称"   checked="checked"/>
+```
+1. type:
+- 当 type="radio" 时，控件为单选框
+- 当 type="checkbox" 时，控件为复选框
+2. value：提交数据到服务器的值（后台程序PHP使用）
+3. name：为控件命名，以备后台程序 ASP、PHP 使用
+4. checked：当设置 checked="checked" 时，该选项被默认选中
+
+### ex:
+![](http://img.mukewang.com/52e5f7c60001a23f07360267.jpg)
+![](http://img.mukewang.com/52e5f8010001159804900257.jpg)
+
+同一组的单选按钮，name 取值一定要一致，比如上面例子为同一个名称“radioLove”，这样同一组的单选按钮才可以起到单选的作用。
+
+# 下拉列表框:
+下拉列表在网页中也常会用到，它可以有效的节省网页空间。
+![](http://img.mukewang.com/52e604590001ae4005270185.jpg)
+1. value:
+![](http://img.mukewang.com/52e6037300015a9905030165.jpg)
+2. selected="selected":
+设置selected="selected"属性，则该选项就被默认选中。
+
+## 下拉列表框进行多选:
