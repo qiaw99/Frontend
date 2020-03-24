@@ -86,3 +86,54 @@
 设置selected="selected"属性，则该选项就被默认选中。
 
 ## 下拉列表框进行多选:
+下拉列表也可以进行多选操作，在\<select>标签中设置multiple="multiple"属性，就可以实现多选功能，在 windows 操作系统下，进行多选时按下Ctrl键同时进行单击（在 Mac下使用 Command +单击），可以选择多个选项。如下代码：
+![](http://img.mukewang.com/52e60c020001b7f805000178.jpg)
+![](http://img.mukewang.com/52e60c5d00013ced04900257.jpg)
+
+# 提交按钮:
+在表单中有两种按钮可以使用，分别为：提交按钮、重置。当用户需要提交表单信息到服务器时，需要用到提交按钮。
+
+### Syntax:
+```html
+<input   type="submit"   value="提交">
+```
+- type：只有当type值设置为submit时，按钮才有提交作用
+- value：按钮上显示的文字
+
+![](http://img.mukewang.com/52e613350001461604820109.jpg)
+![](http://img.mukewang.com/52e6126f0001496a04480218.jpg)
+
+# 重置按钮:
+当用户需要重置表单信息到初始时的状态时，比如用户输入“用户名”后，发现书写有误，可以使用重置按钮使输入框恢复到初始状态。只需要把type设置为"reset"就可以。
+
+### Syntax:
+```html
+<input type="reset" value="重置">
+```
+- type：只有当type值设置为reset时，按钮才有重置作用
+- value：按钮上显示的文字
+
+![](http://img.mukewang.com/52e618680001a6b204570101.jpg)
+![](http://img.mukewang.com/52e618bc00015a1004480218.jpg)
+
+# form表单中的label标签:
+label标签不会向用户呈现任何特殊效果，它的作用是为鼠标用户改进了可用性。如果你在 label 标签内点击文本，就会触发此控件。就是说，当用户单击选中该label标签时，浏览器就会自动将焦点转到和标签相关的表单控件上（就自动选中和该label标签相关连的表单控件上）。
+
+### Syntax:
+```html
+<label for="控件id名称">
+```
+标签的 for 属性中的值应当与相关控件的 id 属性值一定要相同。
+
+### ex:
+```html
+<form>
+  <label for="male">男</label>
+  <input type="radio" name="gender" id="male" />
+  <br />
+  <label for="female">女</label>
+  <input type="radio" name="gender" id="female" />
+  <label for="email">输入你的邮箱地址</label>
+  <input type="email" id="email" placeholder="Enter email">
+</form>
+```
