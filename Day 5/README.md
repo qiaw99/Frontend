@@ -43,7 +43,7 @@
 ```html
 <textarea  rows="行数" cols="列数">文本</textarea>
 ```
-1. \<textarea>标签是成对出现的，以\<textarea>开始，以\</textarea>结束。2
+1. \<textarea>标签是成对出现的，以\<textarea>开始，以\</textarea>结束。
 2. cols ：多行输入域的列数。
 3. rows ：多行输入域的行数。
 4. 在\<textarea>\</textarea>标签之间可以输入默认值。
