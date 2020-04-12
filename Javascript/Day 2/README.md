@@ -99,3 +99,23 @@ Object.style.display = value
 ### 看看下面代码:
 
 ![](http://img.mukewang.com/52e4dcf50001bead09310689.jpg)
+
+# 控制类名(className 属性):
+className 属性设置或返回元素的class 属性。
+
+### 语法：
+```javascript
+object.className = classname
+```
+
+### 作用:
+1. 获取元素的class 属性
+
+2. 为网页内的某个元素指定一个css样式来更改该元素的外观
+
+看看下面代码，获得 \<p> 元素的 class 属性和改变className：
+![](http://img.mukewang.com/52e4e28c0001c97f07980838.jpg)
+
+结果:
+
+![](http://img.mukewang.com/52e4e711000135d903810270.jpg)
