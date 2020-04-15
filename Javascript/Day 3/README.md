@@ -51,6 +51,7 @@ JavaScript 创建动态页面。事件是可以被 JavaScript 侦测到的行为
 比如说，当用户单击按钮或者提交表单数据时，就发生一个鼠标单击（onclick）事件，需要浏览器做出处理，返回给用户一个结果。
 
 主要事件表:
+
 ![](http://img.mukewang.com/53e198540001b66404860353.jpg)
 
 ## 鼠标单击事件(onclick):
@@ -105,6 +106,7 @@ onclick是鼠标单击事件，当在网页上单击鼠标时，就会发生该�
 ![](http://img.mukewang.com/53e19337000113d108390338.jpg)
 
 __运行结果：__
+
 ![](http://img.mukewang.com/5312c5660001821a04300326.jpg)
 
 ## 失焦事件(onblur):
